@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trail 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Lato:700|Anton|Iceberg|Archivo+Black" rel="stylesheet">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#select").click(function(){
+					$("#select").animate({
+				right: '80vw',
+			height: '80vh',
+		},"slow");
+			});
+			    $("#select").mouseleave(function(){
+					$("#select").animate({
+				right: '96vw',
+			height: '4vw',
+		},"slow");
+			});
+		})
+	</script>   
+		<style>
+	body{
+	background-color: #000080;
+}
+#imgone {
+	position: relative;
+	width: 25vw;
+	height: 23vw;
+	top: 8vw;
+	display: inline-block;
+	left: 15vw;
+}
+#select{
+	position: fixed;
+	height: 4vw;
+	width: 20vw;
+	right: 96vw;
+	top: 5vh;
+	border: 5px grey solid;
+	border-radius: 0px 1vw 1vw 0px;
+	-index: 1000;
+}
+#imgtwo {
+	height: 10vw;
+	width: 10vw;
+}
+#select a{
+	text-decoration: none;
+}
+/*
+#select:hover {
+	animation-name: change;
+	animation-duration: 1s;
+	-webkit-animation-name: change;
+	-webkit-animation-duration: 1s;
+}*/
+
+#home{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2.5vw;
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 1vw;
+	bottom: 5.2vw;
+	width: 14vw;
+	height: 0;
+	margin: 0;	
+	padding: 0 0 0 0.5vw;
+}
+
+#home:hover {
+	text-shadow: 
+	  4px 4px 0px #d5d5d5, 
+	  7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#us{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2vw;
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 1vw;
+	bottom: 5.2vw;
+	height: 2vw;
+	width: 14vw;
+	margin: 0;	
+	padding: 0 0 0.5vw 0.5vw;
+}
+
+#us:hover {
+	text-shadow: 
+	  4px 4px 0px #d5d5d5, 
+	  7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#acti{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2vw;
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 1vw;
+	bottom: 5.2vw;
+	height: 2vw;
+	width: 14vw;
+	margin: 0;	
+	padding: 0 0 0.5vw 0.5vw;
+}
+
+#acti:hover {
+	text-shadow: 
+	  4px 4px 0px #d5d5d5, 
+	  7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#sign{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2vw;
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 1vw;
+	bottom: 5.2vw;
+	height: 2vw;
+	width: 14vw;
+	margin: 0;	
+	padding: 0 0 0.5vw 0.5vw;
+}
+
+#sign:hover {
+	text-shadow: 
+	  4px 4px 0px #d5d5d5, 
+	  7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#cont{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2vw;
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 1vw;
+	bottom: 5.2vw;
+	height: 2vw;
+	width: 14vw;
+	margin: 0;	
+	padding: 0 0 0.5vw 0.5vw;
+}
+
+#cont:hover {
+	text-shadow: 
+	  4px 4px 0px #d5d5d5, 
+	  7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+#divcolor {
+  position: absolute;
+  background-color: #0f32a6;
+  top:0px;
+  left:0px;
+  width: 100%;
+}
+ul {
+	font-family: 'Archivo Black', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333;*/
+  font-size:1vw;
+}
+
+li a:not(.active){
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  float:left;
+}
+h1 {
+    position:absolute;
+    color:white;
+    font-size:6vw;
+    left:15vw;
+    right:60vw;
+    text-align:center;
+    top:30vw;
+	font-family: 'Archivo Black', sans-serif;
+
+}
+		</style>
+		</head>
+	<body>
+		<header>
+		    <div id="divcolor">
+			<ul>
+        <li><a class="active" href="#Home">Home</a></li>
+            <li><a href="#Us">About</a></li>
+        <li><a href="#Acti">Activity</a></li>
+            <li><a href="Sign">Sign in</a></li>
+        <li><a href="#Cont">Contact</a></li>
+            </ul>
+            </div>
+        <img src="https://s3.ca-central-1.amazonaws.com/beadonorca/uploads/WOSSLOGO_256colour-3963098984666d87d912a9696f8b223b.png" id="imgone"/>
+        <h1>SHTS</h1>
+        <!--<div id="select">
+				<img id="imgtwo" src="https:https://image.flaticon.com/icons/svg/61/61140.svg" alt="MENU"/>
+				<br/><br/>
+			<a href="#Home"><div class="one" id="home"><p style="position:relative; bottom:4.6vw;">Home</p></div></a><br/>
+				<a href="#Us"><div class="one" id="us">About</div></a><br/>
+				    <a href="#Acti"><div class="one" id="acti">Activity</div></a><br/>
+				<a href="#Sign"><div class="one" id="sign">Sign in</div></a><br/>
+			<a href="#Cont"><div class="one" id="cont">Contact</div></a><br/>
+		</div>-->
+</header>
+	</body>
+</html>
 
