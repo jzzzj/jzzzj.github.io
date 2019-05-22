@@ -23,7 +23,7 @@
 	</script>   
 		<style>
 	body{
-	background-color: #1aa3ff;
+	background-color: #003399;
 }
 #imgone {
 	position: relative;
@@ -44,10 +44,11 @@
 	-index: 1000;
 }
 #imgtwo {
+    position:relative;
 	height: 4vw;
 	width: 4vw;
-	display:inline-block;
-	
+	display:inline;
+	float:left;
 }
 #divcolor {
   position: absolute;
@@ -65,18 +66,17 @@ ul {
   /*background-color: #333;*/
 }
 
-li a:not(.Today){
-  float: left;
-}
-li a:not(.active){
-  	  font-size:1.5vw;
+li a:not(.active):not(.Today){
+  	  font-size:0.5vw;    
+  padding: 1.75vw 0.5vw;
 }
 			.Today{
-				float:right}
+				float:right;
+				font-size:1.5vw;
+			}
 li a {
-  display: block;
-  text-align: center;
-  padding: 0.5vw 1vw;
+	position: relative;
+  display:inline-block;
   text-decoration: none;
 	color: black;
 }
@@ -86,9 +86,13 @@ li a:hover :not(.Today){
 	color: #66ccff;
 }
 
+li a:not(.Today){
+	float:left;
+}
+
 .active {
-  float:left;
-	  font-size:2.5vw;
+	  font-size:2vw;
+  padding: 0.5vw 1vw;
 }
 h1 {
     position:absolute;
@@ -102,7 +106,7 @@ h1 {
 
 }
 	.firp{	
-		position:related;
+		position:relative;
 		font-family:sans-serif;
 		font-size:1vw;
 		padding:0vw 1vw;
@@ -113,12 +117,13 @@ h1 {
 			position:related;
 				text-align:center;
 			}
+			    
 		</style>
 		</head>
 	<body>
 		<header>
 		    <div id="divcolor">
-			    </br>
+			    <br/>
 			<ul>
         <li><a class="active" href="#Home">Home</a></li>
 				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
@@ -126,7 +131,7 @@ h1 {
         <li><a href="#Acti">Activity</a></li>
             <li><a href="Sign">Sign in</a></li>
         <li><a href="#Cont">Contact</a></li>
-				<li><a href="#Today"><p style="color:66ccff;">Sigh in</p><p style="color:ff1a1a;">and start today</p></a></li>		
+				<li><a href="#Today" class="Today"><p style="color:#66ccff; display: inline-block;">Sigh in&nbsp;</p><p style="color:#ff1a1a; display:inline-block">and start today</p></a></li>		
             </ul>
 			    <!--<div id="divone">
 			    <p class="firp"><a>what is SHTS</a></p>
