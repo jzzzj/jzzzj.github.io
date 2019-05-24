@@ -67,8 +67,7 @@ ul {
   overflow: hidden;
   /*background-color: #333;*/
 }
-
-li a:not(.active):not(.Today){
+li a:not(.active):not(.Today):not(.act){
   	  font-size:1vw;    
   padding: 1vw 1vw;
 }
@@ -79,6 +78,10 @@ li a:not(.active):not(.Today){
 	padding: 0.5vw 1vw;
 	vertical-align：center;
 }
+.act{
+	padding:1vw;
+	font-size:1vw;
+}
 li a {
     vertical-align:center;
 	position: relative;
@@ -87,7 +90,7 @@ li a {
 	color: black;
 }
 
-li a:hover:not(.Today){
+li a:hover:not(.Today):not(.act){
   background-color: #e6e6e6;
 	color: #66ccff;
 }
@@ -146,6 +149,7 @@ h1 {
 			    <br/>
 			<ul>
         <li><a class="active" href="#Home">SHTS</a></li>
+				<li><a class="act">Student Helping/n;Tutor System </a></li>
 				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
             <li><a href="#Us">About</a></li>
         <li><a href="#Acti">Activity</a></li>
