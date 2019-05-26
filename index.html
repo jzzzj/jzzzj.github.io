@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>SHTS</title>
+		<title>SITS</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 		<!--link rel="icon" href="https://github.com/jzzzj/jzzzj.github.io/blob/master/llx/llx.mp4" type="video/mp4" />-->
 		</script>
@@ -60,15 +60,14 @@
   height: 6vw;
 }
 ul {
-	font-family: sans-serif;
+	font-family:  "Times New Roman", Times, serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   /*background-color: #333;*/
 }
-
-li a:not(.active):not(.Today){
+li a:not(.active):not(.Today):not(.act){
   	  font-size:1vw;    
   padding: 1vw 1vw;
 }
@@ -79,6 +78,12 @@ li a:not(.active):not(.Today){
 	padding: 0.5vw 1vw;
 	vertical-align：center;
 }
+.act{
+	padding:0.25vw 1vw;
+	font-size:1vw;
+	color: #bfbfbf;
+	text-align:center;
+}
 li a {
     vertical-align:center;
 	position: relative;
@@ -87,7 +92,7 @@ li a {
 	color: black;
 }
 
-li a:hover:not(.Today){
+li a:hover:not(.Today):not(.act){
   background-color: #e6e6e6;
 	color: #66ccff;
 }
@@ -108,7 +113,7 @@ h1 {
     right:65vw;
     text-align:center;
     top:33vw;
-	font-family: 'Archivo Black', sans-serif;
+	font-family: "georgia",serif;
 
 }
 	.firp{	
@@ -135,7 +140,7 @@ h1 {
 				top:39vw;
 				font-size:1.5vw;
 				left:45vw;
-				font-family: sans-serif;
+				font-family:"Times New Roman", Times, serif;
 				color:#ffffff;
 			}
 		</style>
@@ -145,7 +150,8 @@ h1 {
 		    <div id="divcolor">
 			    <br/>
 			<ul>
-        <li><a class="active" href="#Home">SHTS</a></li>
+        <li><a class="active" href="#Home">SITS</a></li>
+				<li><a class="act">Student Interactive<br/>Tutor System </a></li>
 				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
             <li><a href="#Us">About</a></li>
         <li><a href="#Acti">Activity</a></li>
@@ -162,7 +168,7 @@ h1 {
 			    </div>-->
             </div>
         <img src="https://s3.ca-central-1.amazonaws.com/beadonorca/uploads/WOSSLOGO_256colour-3963098984666d87d912a9696f8b223b.png" id="imgone"/>
-        <h1>SHTS</h1>
+        <h1>SITS</h1>
         <!--<div id="select">
 				<img id="imgtwo" src="https:https://image.flaticon.com/icons/svg/61/61140.svg" alt="MENU"/>
 				<br/><br/>
@@ -174,11 +180,10 @@ h1 {
 		</div>-->
 </header>
 		<div>
-		<video controls autoplay loop>
-  <source src="llx.mp4" type="video/mp4" />
+		<video muted autoplay loop>
+  <source src="wg.mp4" type="video/mp4" />
 </video>
 		</div>
 		<p id="paraone">Reminder:none</p>
 	</body>
 </html>
-
