@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bob 's Auto Parts - Order Results</title>
+  <title>SITS</title>
 </head>
 <body>
-  <h1>Bob 's Auto Parts</h1>
-  <h2>Order Results</h2>
-  <?php
-  echo "<p>Order processed at ";
-  echo date('H:i, jS F Y')."</p>";
-  echo "<p>Your order is as follows: </p>";
-  echo "$tireqty tires<br />";
-  echo $oilqty.' bottles of oil<br />';
-  echo $sparkqty." spark plugs<br />"
-  ?>
-  ---------------------------------------------------<br />
-  <?php
-  $testHeredoc = <<< EOF
-  line 1  
-  line 2  
-  line 3  
-EOF;
-  echo "$testHeredoc"."<br />";
-  ?>
-  ---------------------------------------------------<br />
-  <?php
-  echo "About Comment:";
-  //Here is a comment.
-  #Here is a comment too.
-  /*
-  Here is multi line comment.
-  Here is multi line comment.
-   */
-  ?>
+<?php
+if (isset($_REQUEST['email']))
+//if "email" is filled out, send email
+  {
+  //send email
+  $email = $_REQUEST['email'] ; 
+  $subject = $_REQUEST['subject'] ;
+  $message = $_REQUEST['message'] ;
+  mail( "jsisbetter@gmail.com", "Subject: $subject",
+  $message, "From: $email" );
+  echo "Thank you for using our mail form";
+  }
+else
+?>
 </body>
 </html>
