@@ -117,11 +117,31 @@ li a:not(.Today){
 		<p style="position: relative; top:6vw; text-align:center; font-size:4vw">Sign in</p>
 		
 		<body>
-		<form action="two.html" method="post" enctype="text/plain" style="position: relative; top:6vw; text-align:center; font-size:2vw">
-			<label for="name">Name:</label><br/>
-			<input type="text" name="name"/><br/>
-			<input type="submit" value="Send"/>
-		</form>
+		<?php
+if (isset($_REQUEST['email']))
+//if "email" is filled out, send email
+  {
+  //send email
+  $email = $_REQUEST['email'] ; 
+  $subject = $_REQUEST['subject'] ;
+  $message = $_REQUEST['message'] ;
+  mail( "jsisbetter@gmail.com", "Subject: $subject",
+  $message, "From: $email" );
+  echo "Thank you for using our mail form";
+  }
+else
+//if "email" is not filled out, display the form
+  {
+  echo "<form method='post' action='mailform.php'>
+  Email: <input name='email' type='text' /><br />
+  Subject: <input name='subject' type='text' /><br />
+  Message:<br />
+  <textarea name='message' rows='15' cols='40'>
+  </textarea><br />
+  <input type='submit' />
+  </form>";
+  }
+?>
 	</body>
 </html>
 
