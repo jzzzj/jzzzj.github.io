@@ -4,6 +4,7 @@
   <title>SITS</title>
 </head>
 <body>
+  <p>Helo world</p>
 <?php
 if (isset($_REQUEST['email']))
 //if "email" is filled out, send email
