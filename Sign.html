@@ -102,7 +102,7 @@ li a:not(.Today){
 		<header>
 		    <div id="divcolor">
 			    <br/>
-			<ul>
+			<ul>+
         <li><a class="active" href="http://www.wosssits.ml">SITS</a></li>
 				<li><a class="act">Student Interactive<br/>Tutor System </a></li>
 				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
@@ -132,7 +132,7 @@ if (isset($_REQUEST['email']))
 else
 //if "email" is not filled out, display the form
   {
-  echo "<form method='post' action='mailform.php'>
+  echo "<form method='post' action='mailform.php'  style="position: relative; top:4vw; text-align:center; font-size:2vw">
   Email: <input name='email' type='text' /><br />
   Subject: <input name='subject' type='text' /><br />
   Message:<br />
