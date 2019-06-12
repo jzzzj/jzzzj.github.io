@@ -1,8 +1,8 @@
 
 <?php
-  $email = $_POST['email'] ; 
-  $subject = $_POST['subject'] ;
-  $message = $_POST['message'] ;
+  $email = $_GET['email'] ; 
+  $subject = $_GET['subject'] ;
+  $message = $_GET['message'] ;
   echo $email;
   echo $subject;
   echo $message;
