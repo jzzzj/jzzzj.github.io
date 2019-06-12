@@ -1,10 +1,7 @@
 
 <?php
-  $email = $_GET['email'] ; 
-  $subject = $_GET['subject'] ;
-  $message = $_GET['message'] ;
-  echo $email;
-  echo $subject;
-  echo $message;
+  echo "$_POST['email']" ; 
+  echo "$_POST['subject']" ;
+  echo "$_POST['message']" ;
 ?>
 
