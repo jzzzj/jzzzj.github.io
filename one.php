@@ -1,7 +1,7 @@
 
 <?php
-  echo "$_POST['email']" ; 
-  echo "$_POST['subject']" ;
-  echo "$_POST['message']" ;
+  echo "$_GET['email']" ; 
+  echo "$_GET['subject']" ;
+  echo "$_GET['message']" ;
 ?>
 
