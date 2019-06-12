@@ -6,11 +6,11 @@
 		<!--link rel="icon" href="https://github.com/jzzzj/jzzzj.github.io/blob/master/llx/llx.mp4" type="video/mp4" />-->
 		</script>
 		<link href="https://fonts.googleapis.com/css?family=Lato:700|Anton|Iceberg|Archivo+Black" rel="stylesheet">
-		<script type="text/javascript">
+		<script>
 			$(document).ready(function() {
-				$(".planaform").hide();
-   		$(".plana").click(function(){
-    	$(".planaform").show();
+				$("#planaform").hide();
+   		$("#plana").click(function(){
+    	$("#planaform").show();
   		});
 			});
 	</script>   
@@ -122,7 +122,7 @@ li a:not(.Today){
 		<p style="position: relative; top:5vw; text-align:center; font-size:4vw">Sign in</p>
 		
 		<body>
-			<p id="plana">Sign in plan A: send a email</p>
+			<p id="plana" style="position: relative; top:3vw; font-size:2vw">Sign in plan A: send a email</p>
 <form id="planaform" action="mailto:jsisbetter@gmail.com" method="post" enctype="text/plain" style="position: relative; top:4vw; text-align:center; font-size:2vw">
 	Email: <input name='email' type='text' value="email"/><br />
 	Subject: <input name='subject' type='text' value="subject"/><br />
