@@ -13,6 +13,18 @@
     	$("#planaform").toggle(1000);
   		});
 			});
+			$(document).ready(function() {
+				$("#lp").hide();
+   		$("#lun").click(function(){
+    	$("#lp").toggle();
+  		});
+			});
+			$(document).ready(function() {
+				$("#at").hide();
+   		$("#aft").click(function(){
+    	$("#at").toggle();
+  		});
+			});
 	</script>   
 	<script>
 var x,y,n=0,ny=0,rotINT,rotYINT;
@@ -150,7 +162,11 @@ li a:not(.Today){
 	Tutor or tutored: <br/><input name='tutor' type='radio' required="required"/>tutor<br />
 		<input name='tutor' type='radio'required="required"/>tutored<br />
 	Subject: <input name='subject' type='text' placeholder="english" style="font-size:1vw;color:#ffffff; vertical-align:middle"/><br />
-	Message:<br /><textarea name='message' value="message" rows='15' cols='40'>
+	Time: <br/><input id="lun" name='time' type='radio' required="required"/>Lunch time<br />
+		<input id="aft" name='time' type='radio'required="required"/>Afternoon<br />
+		Lunch period: <input id="lp" name='lunch' type='number' required="required" min="1" max="5"/><br />
+		Afternoon time: <input id="at" name='afternoon' type='time' required="required"/><br />
+	Message:<br /><textarea name='message' value="message" rows='5' cols='20'>
 	</textarea><br />
 	<input type='submit' value="submit"/>
 	</form>	
