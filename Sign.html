@@ -147,9 +147,9 @@ li a:not(.Today){
 		<body>
 			<div style="position: relative; top:3vw; left:5vw; width:90vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Sign in plan A: send a email</p><p style="display:inline;">&nbsp;&nbsp;</p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/></div>
 <form id="planaform" action="mailto:jsisbetter@gmail.com" method="post" enctype="text/plain" style="position: relative; top:4vw; left:30vw; font-size:2vw;color:#ffffff;">
-	Tutor or tutored: <br/><input name='tutor' type='radio'/>tutor<br />
-		<input name='tutor' type='radio'/>tutored<br />
-	Subject: <input name='subject' type='text' placeholder="english"/><br />
+	Tutor or tutored: <br/><input name='tutor' type='radio' required="required"/>tutor<br />
+		<input name='tutor' type='radio'required="required"/>tutored<br />
+	Subject: <input name='subject' type='text' placeholder="english" style="font-size:2vw;color:#ffffff;"/><br />
 	Message:<br /><textarea name='message' value="message" rows='15' cols='40'>
 	</textarea><br />
 	<input type='submit' value="submit"/>
