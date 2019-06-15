@@ -149,7 +149,14 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+textarea {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -185,8 +192,8 @@ input[type=submit]:hover {
 		<p style="position: relative; top:5vw; text-align:center; font-size:4vw">Sign in</p>
 		
 		<body>
-			<div style="position: relative; top:3vw; left:5vw; width:90vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Sign in plan A: send a email</p><p style="display:inline;">&nbsp;&nbsp;</p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/></div><br/>
-<form id="planaform" action="mailto:jsisbetter@gmail.com" method="post" enctype="text/plain" style="position: relative; top:4vw; left:20vw; font-size:1.5vw; color:#ffffff; width:25vw; display:inline-block;" >
+	<div style="position: relative; top:3vw; left:5vw; width:90vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Sign in plan A: send a email</p><p style="display:inline;">&nbsp;&nbsp;</p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/></div>
+<form id="planaform" action="mailto:jsisbetter@gmail.com" method="post" enctype="text/plain" style="position: relative; top:4vw; left:20vw; font-size:1.5vw; color:#ffffff; width:25vw; display:inline-block; font-family:garamond;" >
 	Tutor or tutored: <br/><input name='tutor' type='radio' required="required"/>tutor<br />
 		<input name='tutor' type='radio'required="required"/>tutored<br />
 	Subject: <input name='subject' type='text' placeholder="english" style="font-size:1vw;color:#000000; vertical-align:middle" required="required"/><br />
