@@ -5,6 +5,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 		</script>
 		<link href="https://fonts.googleapis.com/css?family=Lato:700|Anton|Iceberg|Archivo+Black" rel="stylesheet">
+		<script type="text/javascript">
+		$(document).ready(function(){
+		var w = $(window).width();
+		    console.log(w);
+		var h = $(window).height();
+		    console.log(h);
+			while(h>w){
+			alert("please place the electronic device horizontally!");
+			}
+		})
+		</script>
 		<style>
 	body{
 		overflow:hidden;
@@ -13,7 +24,8 @@
 		width:100%;
 	background-color: #003399;
 }
-#imgone {		
+#imgone {
+	z-index:99;
 	width: 25vw;	    
 	height: 23vw;			
 	display: inline-block;		
@@ -79,7 +91,6 @@ li a:not(.Today){
   padding: 1.5vw 1vw;
 }
 h1 {
-	z-index:-99;
     position:relative;
     color:white;
     font-size:2vw;
