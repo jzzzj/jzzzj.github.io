@@ -48,9 +48,11 @@ li a:not(.active):not(.Today):not(.act){
 	width:5vw;
 	position:relative;
 	display:inline-block;
+}
+li p:not(.active):not(.Today):not(.act){
+	position:relative;
+	display:inline-block;
   	font-size:1vw;    
-  	padding-left: 1vw;
-	padding-right: 1vw;
 	vertical-align: middle;
 }
 .Today{
@@ -134,13 +136,13 @@ h1 {
 		<header style="height: 15vh;">
 		    <div id="divcolor">
 			<ul>
-				<li><a class="active" href="http://www.wosssits.ml">SITS</a></li>
-				<li><a class="act">Student Interactive<br/>Tutor System </a></li>
+				<li><a class="active" href="http://www.wosssits.ml"><p>SITS</p></a></li>
+				<li><a class="act">Student Interactive<br/><p>Tutor System</p></a></li>
 				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
-            <li><a href="Us">Intro</a></li>
-        <li><a href="Acti">Activity</a></li>
-            <li><a href="Sign">Sign in</a></li>
-        <li><a href="Cont">Contact</a></li>
+				<li><a href="Us"><p>Intro</p></a></li>
+				<li><a href="Acti"><p>Activity</p></a></li>
+				<li><a href="Sign"><p>Sign in</p></a></li>
+				<li><a href="Cont"><p>Contact</p></a></li>
 				<li><a href="#Today" class="Today"><p style="color:#66ccff; display: inline-block;">Sign in&nbsp;</p><p style="color:#ff1a1a; display:inline-block">and start today</p></a></li>		
             </ul>
             </div>
