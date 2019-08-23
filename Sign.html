@@ -75,26 +75,19 @@ if (n==360){n=0}
 		position:static;
 		height:100%;
 		width:100%;
-	background-color: #003399;
+	background: #1a1a1a;
 }
-#imgtwo {	
-    position:relative;	
-	padding:1.5vw;
-	height: 3vw;	
-	width: 3vw;	
-	display:inline;	
-	float:left;	
-}
+
 #divcolor {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   top:0px;
   left:0px;
   width: 100%;
-  height: 6vw;
+  height: 6.5vw;
 }
 ul {
-	font-family:  "Times New Roman", Times, serif;
+	font-family: Arial;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -102,19 +95,27 @@ ul {
   /*background-color: #333;*/
 }
 li a:not(.active):not(.Today):not(.act){
-  	  font-size:1.25vw;    
-  padding: 2.3vw 1vw;
+  	  font-size:1vw;    
+  padding-right: 1vw;
+	padding-left: 1vw;
+	padding-top: 3.5vw;
+		padding-bottom: 1vw;
 }
 .Today{
-	top:-1.5vw;
 	float:right;
-	font-size:1.5vw;
-	padding: 2.25vw 2vw;
+	font-size:1.25vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
 }
 .act{
-	padding:1.75vw 1vw;
+	padding-left:1vw;
+	padding-right: 1vw;
+	padding-top:2.75vw;
+	padding-bottom:0.5vw;
 	font-size:1vw;
-	color: #bfbfbf;
+	color: #ff4000;
 	text-align:center;
 }
 li a {
@@ -122,19 +123,23 @@ li a {
 	position: relative;
   display:inline-block;
   text-decoration: none;
-	color: black;
+	color: white;
 }
 			
 li a:hover:not(.Today):not(.act){
-  background-color: #e6e6e6;
 	color: #66ccff;
 }
+
 li a:not(.Today){
-	float:left;
+	float: left;
 }
 .active {
 	  font-size:2.5vw;
-  padding: 1.5vw 1vw;
+  padding-top: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom:0.75vw;
+	border-bottom: 2px solid #585858;
 }
 #paraone{
 	font-family:  "Times New Roman", Times, serif;
