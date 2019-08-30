@@ -24,24 +24,6 @@
     	$("#planaform").toggle(1000);
   		});
 			});
-		$(document).ready(function() {
-	$("#lp").hide();
-   		$("#lun").click(function(){
-    	$("#lp").show();
-  			});
-		$("#aft").click(function(){
-    	$("#lp").hide();
-  		});
-			});
-		$(document).ready(function() {
-	$("#at").hide();
-   		$("#aft").click(function(){
-    	$("#at").show();
-  			});
-		$("#lun").click(function(){
-    	$("#at").hide();
-  		});
-			});
 	</script>   
 	<script>
 var x,y,n=0,ny=0,rotINT,rotYINT;
@@ -212,11 +194,13 @@ input[type=submit]:hover {
 		<div style="position: relative; height:4vh; text-align:center; font-size:3vw; padding:3vh 0vw;"><p style="display:inline;">Sign in</p></div>
 		
 		<body>
-	<div style="position: relative; top:4vh; left:5vw; width:90vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">Instruction:</p><p style="display:inline;"></p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/></div>
+	<div style="position: relative; top:4vh; left:5vw; width:45vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Instruction:</p><p style="display:inline;"></p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/>
+			<form id="planaform">
 			<p>step one: click the "sign in and start today on the top right" or the "questionnaire" below, go to the google form. (only available for hdsb account)</p>
 			<br/><br/>
 			<p>step two: finish your questionnaire and click the "submit" button.</p><br/><br/>
 			<p>step three: if you have any more problems or requirements, find our emails and contact us.</p>
+			</form></div>
 			<br/>
 			<div style="position: relative; top:6vh; left:5vw; width:40vw; display:inline-block; font-size:2vw;"><p style="display:inline; font-size:2vw;">• Sign in with google form:</p><address style="text-decoration: underline; display: inline"><a href="https://docs.google.com/forms/u/1/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/viewform?edit_requested=true" style="color:white;">questionnaire</a></address></div>
 	<img src="https://www.wcasd.net/cms/lib/PA02203541/Centricity/Domain/1043/tutor1.png" style="position:fixed; width:40vw; left:50vw; height:30vw; top:32vh; display:inline-block;" />
