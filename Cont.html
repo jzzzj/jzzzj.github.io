@@ -26,26 +26,19 @@
 		position:static;
 		height:100%;
 		width:100%;
-	background-color: #003399;
+	background: #1a1a1a;
 }
-#imgtwo {	
-    position:relative;	
-	padding:1.5vw;
-	height: 3vw;	
-	width: 3vw;	
-	display:inline;	
-	float:left;	
-}
+
 #divcolor {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   top:0px;
   left:0px;
   width: 100%;
-  height: 6vw;
+  height: 6.5vw;
 }
 ul {
-	font-family:  "Times New Roman", Times, serif;
+	font-family: Arial;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,19 +46,27 @@ ul {
   /*background-color: #333;*/
 }
 li a:not(.active):not(.Today):not(.act){
-  	  font-size:1.25vw;    
-  padding: 2.3vw 1vw;
+  	  font-size:1vw;    
+  padding-right: 1vw;
+	padding-left: 1vw;
+	padding-top: 3.5vw;
+		padding-bottom: 1vw;
 }
 .Today{
-	top:-1.5vw;
 	float:right;
-	font-size:1.5vw;
-	padding: 2.25vw 2vw;
+	font-size:1.25vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
 }
 .act{
-	padding:1.75vw 1vw;
+	padding-left:1vw;
+	padding-right: 1vw;
+	padding-top:2.75vw;
+	padding-bottom:0.5vw;
 	font-size:1vw;
-	color: #bfbfbf;
+	color: #ff4000;
 	text-align:center;
 }
 li a {
@@ -73,70 +74,67 @@ li a {
 	position: relative;
   display:inline-block;
   text-decoration: none;
-	color: black;
+	color: white;
 }
 			
 li a:hover:not(.Today):not(.act){
-  background-color: #e6e6e6;
 	color: #66ccff;
 }
+
 li a:not(.Today){
-	float:left;
+	float: left;
 }
 .active {
 	  font-size:2.5vw;
-  padding: 1.5vw 1vw;
+  padding-top: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom:0.75vw;
+	border-bottom: 2px solid #585858;
 }
 			h1 {
 			font-family:serif,Verdana;
 				font-size:2.5vw;
-				color: #343418; /* it was supposed to be #262510, i change it for a reason, 19/07/04. */
+				color: #ff0000; /* it was supposed to be #262510, i change it for a reason, 19/07/04. */
 			}
 			
 
-			p:not(.one){
+			p:not(.one):not(.todayone){
 			color: #ffffff;
 				font-family:Monospace,Courier New;
 			}
-			#left{
+			#one{
 				position:fixed;
 				top:16vh;
-				left:1vw;
-				width:30vw;
+				left:2vw;
+				width:96vw;
 				height:80vh;
 			}
-			#right{
-				position:fixed;
-				top:16vh;				
-				left:69vw;
-				width:30vw;
-				height:80vh;
-			}
+			
 		</style>
 		</head>
 	<body>
 		<header style="height: 15vh;">
-		    <div id="divcolor">
+		     <div id="divcolor">
 			<ul>
-        <li><a class="active" href="http://www.wosssits.ml">SITS</a></li>
-				<li><a class="act">Student Interactive<br/>Tutor System </a></li>
-				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
-            <li><a href="Us">Intro</a></li>
-        <li><a href="Acti">Activity</a></li>
-            <li><a href="Sign">Sign in</a></li>
-        <li><a href="Cont">Contact</a></li>
-				<li><a href="https://docs.google.com/forms/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/edit" class="Today"><p style="color:#66ccff; display: inline-block;" class="one">Sign in&nbsp;</p><p class="one" style="color:#ff1a1a; display:inline-block">and start today</p></a></li>		
+				<li><a class="active" href="http://www.wosssits.ml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SITS</a></li>
+				<li><a class="act">Student Interactive<br/>Tutor System</a></li>
+				<li><a href="Us">INTRO</a></li>
+				<!--<li><a href="Acti">ACTIVITY</a></li>-->
+				<li><a href="Sign">SIGN IN</a></li>
+				<li><a href="Cont">CONTACT</a></li>
+				<li><a href="https://docs.google.com/forms/u/1/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/viewform?edit_requested=true" class="Today"><p style="color:#66ccff; display: inline-block;" class="todayone">Sign in&nbsp;</p><p style="color:#ff1a1a; display:inline-block" class="todayone">and start today</p></a></li>	
             </ul>
-      </div>
+            </div><hr style="position:relative; top:5vw; color: red;"/>
 </header>
-		<img id="left" src="llx/llximg2.jpg" style="filter:opacity(50%);"/>
-		<img id="right" src="llx/llximg2.jpg" style="filter:opacity(50%);"/>
-		<div style="position: relative; top:7vw; text-align:center;">
-		<h1>Main organize</h1>
-		<p>Kane Li: 1likan2@hdsb.ca</p>
-		<p>melissa Ban:  1banmel@hdsb.ca</p><br/>
-		<h1>Website building</h2>
-		<p>Jerry Zhang: jsisbetter@gmail.com</p>	
+		<img id="one" src="llx/one.jpg" style="filter:opacity(40%);"/>
+		<div style="position: relative; top:3vw; text-align:center;">
+		<h1>School Emails:</h1>
+		<p>Melissa: 1banmel@hdsb.ca<br/><br/>Kane: 1likan2@hdsb.ca<br/><br/>Jerry: 1zhangjer2@hdsb.ca<br/><br/>Jake: 1shinjak@hdsb.ca<br/><br/>Shriya: 1krishnashr3@hdsb.ca<br/><br/>Tom: 1tompan@hdsb.ca</p>	
+			<h1>Instagram:</h1>
+				<p>@wosssits</p>
+				<h1>Club Email:</h1>
+					<p>wosssits@gmail.com</p>
 		</div>
 	</body>
 </html>

@@ -21,25 +21,7 @@
 			$(document).ready(function() {
 				$("#planaform").hide();
    		$("#plana").click(function(){
-    	$("#planaform").toggle(1000);
-  		});
-			});
-		$(document).ready(function() {
-	$("#lp").hide();
-   		$("#lun").click(function(){
-    	$("#lp").show();
-  			});
-		$("#aft").click(function(){
-    	$("#lp").hide();
-  		});
-			});
-		$(document).ready(function() {
-	$("#at").hide();
-   		$("#aft").click(function(){
-    	$("#at").show();
-  			});
-		$("#lun").click(function(){
-    	$("#at").hide();
+    	$("#planaform").toggle(500);
   		});
 			});
 	</script>   
@@ -75,26 +57,19 @@ if (n==360){n=0}
 		position:static;
 		height:100%;
 		width:100%;
-	background-color: #003399;
+	background: #1a1a1a;
 }
-#imgtwo {	
-    position:relative;	
-	padding:1.5vw;
-	height: 3vw;	
-	width: 3vw;	
-	display:inline;	
-	float:left;	
-}
+
 #divcolor {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   top:0px;
   left:0px;
   width: 100%;
-  height: 6vw;
+  height: 6.5vw;
 }
 ul {
-	font-family:  "Times New Roman", Times, serif;
+	font-family: Arial;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -102,19 +77,27 @@ ul {
   /*background-color: #333;*/
 }
 li a:not(.active):not(.Today):not(.act){
-  	  font-size:1.25vw;    
-  padding: 2.3vw 1vw;
+  	  font-size:1vw;    
+  padding-right: 1vw;
+	padding-left: 1vw;
+	padding-top: 3.5vw;
+		padding-bottom: 1vw;
 }
 .Today{
-	top:-1.5vw;
 	float:right;
-	font-size:1.5vw;
-	padding: 2.25vw 2vw;
+	font-size:1.25vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
 }
 .act{
-	padding:1.75vw 1vw;
+	padding-left:1vw;
+	padding-right: 1vw;
+	padding-top:2.75vw;
+	padding-bottom:0.5vw;
 	font-size:1vw;
-	color: #bfbfbf;
+	color: #ff4000;
 	text-align:center;
 }
 li a {
@@ -122,19 +105,23 @@ li a {
 	position: relative;
   display:inline-block;
   text-decoration: none;
-	color: black;
+	color: white;
 }
 			
 li a:hover:not(.Today):not(.act){
-  background-color: #e6e6e6;
 	color: #66ccff;
 }
+
 li a:not(.Today){
-	float:left;
+	float: left;
 }
 .active {
 	  font-size:2.5vw;
-  padding: 1.5vw 1vw;
+  padding-top: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom:0.75vw;
+	border-bottom: 2px solid #585858;
 }
 #paraone{
 	font-family:  "Times New Roman", Times, serif;
@@ -192,39 +179,30 @@ input[type=submit]:hover {
 		</head>
 	<body>
 		<header style="height:15vh;">
-		    <div id="divcolor">
-
+		     <div id="divcolor">
 			<ul>
-        <li><a class="active" href="http://www.wosssits.ml">SITS</a></li>
-				<li><a class="act">Student Interactive<br/>Tutor System </a></li>
-				<img src="https://www.charbase.com/images/glyph/8286" id="imgtwo"/>
-            <li><a href="Us">Intro</a></li>
-        <li><a href="Acti">Activity</a></li>
-            <li><a href="Sign">Sign in</a></li>
-        <li><a href="Cont">Contact</a></li>
-				<li><a href="https://docs.google.com/forms/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/edit" class="Today"><p style="color:#66ccff; display: inline-block;">Sign in&nbsp;</p><p style="color:#ff1a1a; display:inline-block">and start today</p></a></li>		
+				<li><a class="active" href="http://www.wosssits.ml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SITS</a></li>
+				<li><a class="act">Student Interactive<br/>Tutor System</a></li>
+				<li><a href="Us">INTRO</a></li>
+				<!--<li><a href="Acti">ACTIVITY</a></li>-->
+				<li><a href="Sign">SIGN IN</a></li>
+				<li><a href="Cont">CONTACT</a></li>
+				<li><a href="https://docs.google.com/forms/u/1/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/viewform?edit_requested=true" class="Today"><p style="color:#66ccff; display: inline-block;">Sign in&nbsp;</p><p style="color:#ff1a1a; display:inline-block">and start today</p></a></li>	
             </ul>
-      </div>
+            </div><hr style="position:relative; top:5.25vw; color: red;"/>
 </header>
 		<div style="position: relative; height:4vh; text-align:center; font-size:3vw; padding:3vh 0vw;"><p style="display:inline;">Sign in</p></div>
 		
 		<body>
-	<div style="position: relative; top:4vh; left:5vw; width:90vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Sign in plan A: send a email</p><p style="display:inline;">&nbsp;&nbsp;</p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/></div>
-<form id="planaform" action="mailto:jsisbetter@gmail.com" method="post" enctype="text/plain" style="position: relative; top:6vh; left:20vw; font-size:1.25vw; color:#ffffff; width:25vw; display:inline-block;" >
-	Email: (hdsb) <input name='name' type='text' placeholder="1zhangjer2@hdsb.ca" style="font-size:0.75vw;color:#000000; vertical-align:middle" required="required"/><br />
-	Tutor or tutored: <br/><input name='tutor' type='radio' required="required"/>tutor<br />
-		<input name='tutor' type='radio'required="required"/>tutored<br />
-	Subject: <input name='subject' type='text' placeholder="english" style="font-size:0.75vw;color:#000000; vertical-align:middle" required="required"/><br />
-	Time: <br/><input id="lun" name='time' type='radio' required="required"/>Lunch time<br />
-		<input id="aft" name='time' type='radio'required="required"/>Afternoon<br />
-		<div id="lp">Lunch period: <input name='lunch' type='number' min="1" max="5" style="font-size:0.75vw;color:#000000; vertical-align:middle"/><br /></div>
-	<div id="at">Afternoon time: <input name='afternoon' type='text' style="font-size:0.75vw;color:#000000; vertical-align:middle"/><br /></div>
-	Message: (grade, gender, etc)<br /><textarea name='message' value="message" rows='5' cols='20' style="font-size:0.75vw;color:#000000; vertical-align:middle">
-	</textarea><br />
-	<input type='submit' value="send"/>
-	</form> 
+	<div style="position: relative; top:4vh; left:5vw; width:40vw;"><p id="plana" onclick="rotateDIV()" style="display:inline; font-size:2vw; text-decoration: underline;">• Instruction:</p><p style="display:inline;"></p><img src="http://www.raicomvl.rai.it/data/img/vverh.png" style="vertical-align:middle; height:2vw; width:2vw; display:inline;" id="rotate"/>
+			<form id="planaform" style="font-size: 1.5vw;">
+			<p>step one: click the "sign in and start today on the top right" or the "questionnaire" below, go to the google form. (only available for hdsb account)</p>
+			
+			<p>step two: finish your questionnaire and click the "submit" button.</p>
+			<p>step three: if you have any more problems or requirements, find our emails and contact us.</p>
+			</form></div>
 			<br/>
-			<div style="position: relative; top:6vh; left:5vw; width:40vw; display:inline-block; font-size:2vw;"><p style="display:inline; font-size:2vw;">• Sign in plan B: go to the google form <br/> (only availible for hdsb email) :</p><address style="text-decoration: underline; display: inline"><a href="https://docs.google.com/forms/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/edit" style="color:white;">questionnaire</a></address></div>
+			<div style="position: relative; top:6vh; left:5vw; width:40vw; display:inline-block; font-size:2vw;"><p style="display:inline; font-size:2vw;">• Sign in with google form:</p><address style="text-decoration: underline; display: inline"><a href="https://docs.google.com/forms/u/1/d/11cWGQv1M0iuwLI85xD97GIbMO7M1Mjy7PIjTkulsflQ/viewform?edit_requested=true" style="color:white;">questionnaire</a></address></div>
 	<img src="https://www.wcasd.net/cms/lib/PA02203541/Centricity/Domain/1043/tutor1.png" style="position:fixed; width:40vw; left:50vw; height:30vw; top:32vh; display:inline-block;" />
 			</body>
 </html>
